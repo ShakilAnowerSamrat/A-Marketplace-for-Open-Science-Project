@@ -7,6 +7,7 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
  
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -39,6 +40,7 @@ export function StickyNavbar() {
         <a href="#" className="flex items-center">
           Account
         </a>
+
       </Typography>
       <Typography
         as="li"
@@ -59,7 +61,10 @@ export function StickyNavbar() {
         <a href="#" className="flex items-center">
           Docs
         </a>
+    
       </Typography>
+
+      <Link to="/dashboard">Dashboard</Link>
     </ul>
   );
  
